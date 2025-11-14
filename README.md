@@ -273,5 +273,5 @@ Herramientas: IntelliJ IDEA, MySQL Workbench, Gradle
 
 - Paola Pasallo
 - Gonzalo Prados
-- Maximiliano Niemec
+- Maximiliano Niemiec
 - Nicolas Viruel

@@ -9,6 +9,7 @@ public class MenuDisplay {
         System.out.println("4. Eliminar Empleado (baja lógica)");
         System.out.println("5. Crear Legajo");
         System.out.println("6. Listar Legajos");
+        System.out.println("7. Buscar empleado por DNI");
         System.out.println("0. Salir");
         System.out.print("Seleccione una opción: ");
     }

@@ -69,4 +69,12 @@ public class EmpleadoService implements GenericService<Empleado> {
             throw new Exception("Error al eliminar empleado: " + e.getMessage(), e);
         }
     }
+  
+    public Empleado buscarPorDni(String dni) {
+        try {
+            return empleadoDAO.buscarPorDni(dni); // 👈 ahora coincide el nombre
+        } catch (Exception e) {
+            throw new RuntimeException("Error al buscar empleado por DNI", e);
+        }
+    }
 }

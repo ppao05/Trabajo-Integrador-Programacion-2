@@ -109,4 +109,32 @@ public class EmpleadoDAO implements GenericDAO<Empleado> {
         emp.setArea(rs.getString("area"));
         return emp;
     }
+    
+    
+    public Empleado buscarPorDni(String dni) throws SQLException {
+    String sql = "SELECT * FROM empleado WHERE dni = ? AND eliminado = 0";
+
+    try (Connection conn = DatabaseConnection.getConnection();
+         PreparedStatement ps = conn.prepareStatement(sql)) {
+
+        ps.setString(1, dni);
+
+        try (ResultSet rs = ps.executeQuery()) {
+            if (rs.next()) {
+                Empleado emp = new Empleado();
+                emp.setId(rs.getLong("id"));
+                emp.setNombre(rs.getString("nombre"));
+                emp.setApellido(rs.getString("apellido"));
+                emp.setDni(rs.getString("dni"));
+                emp.setEmail(rs.getString("email"));
+                emp.setArea(rs.getString("area"));
+                emp.setEliminado(rs.getBoolean("eliminado"));
+                return emp;
+            }
+        }
+    }
+    return null;
+}
+
+    
 }

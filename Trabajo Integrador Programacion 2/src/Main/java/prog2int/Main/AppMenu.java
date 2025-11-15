@@ -24,6 +24,7 @@ public class AppMenu {
                 case "4" -> menuHandler.eliminarEmpleado();
                 case "5" -> menuHandler.crearLegajo();
                 case "6" -> menuHandler.listarLegajos();
+                case "7" -> menuHandler.buscarEmpleadoPorDni();
                 case "0" -> {
                     System.out.println("Saliendo del sistema...");
                     running = false;

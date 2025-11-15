@@ -113,5 +113,23 @@ public class MenuHandler {
             System.err.println(" Error al listar legajos: " + e.getMessage());
         }
     }
+    
+    public void buscarEmpleadoPorDni() {
+    try {
+        System.out.print("Ingrese DNI del empleado: ");
+        String dni = scanner.nextLine();
+
+        Empleado emp = empleadoService.buscarPorDni(dni);
+        if (emp == null) {
+            System.out.println("No existe empleado con ese DNI.");
+        } else {
+            System.out.println("\n--- Empleado encontrado ---");
+            System.out.println(emp);
+        }
+    } catch (Exception e) {
+        System.err.println("Error en la búsqueda: " + e.getMessage());
+    }
+}
+
 }
 

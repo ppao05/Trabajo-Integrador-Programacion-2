@@ -183,11 +183,6 @@ Menú Principal
     Categoría: Administrativo
     Estado (ACTIVO/INACTIVO): ACTIVO
     Fecha Alta (yyyy-mm-dd): 2023-04-01
-
-    -- Con SQL 
-    -- Insertar datos de prueba
-    -- Si intentás insertar otro empleado con el mismo legajo_id, MySQL te rechazará el insert (por el UNIQUE),
-    -- garantizando la relación 1→1 real.
     
     INSERT INTO legajo (nro_legajo, categoria, estado, fecha_alta)
     VALUES ('TEC-002', 'Tecnico', 'INACTIVO', '2024-06-10');

@@ -165,6 +165,7 @@ Menú Principal
 6. Listar Legajos
 7. Buscar empleado por DNI
 0. Salir
+   
 Seleccione una opción: 
 
 ### Ejemplo de Operación

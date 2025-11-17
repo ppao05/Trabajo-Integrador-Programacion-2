@@ -156,18 +156,16 @@ Desde consola:
 Uso del Sistema
 Menú Principal
 
-    ========= MENU =========
-    1. Crear empleado
-    2. Listar empleados
-    3. Buscar empleado por DNI
-    4. Actualizar empleado
-    5. Eliminar empleado
-    6. Crear legajo
-    7. Listar legajos
-    8. Buscar legajo por número
-    9. Actualizar legajo
-    10. Eliminar legajo
-    0. Salir
+    ========= MENU PRINCIPAL =========
+1. Crear Empleado
+2. Listar Empleados
+3. Actualizar Empleado
+4. Eliminar Empleado (baja lógica)
+5. Crear Legajo
+6. Listar Legajos
+7. Buscar empleado por DNI
+0. Salir
+Seleccione una opción: 
 
 ### Ejemplo de Operación
 
